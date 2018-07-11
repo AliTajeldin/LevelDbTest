@@ -1,13 +1,13 @@
-const obj = {
-    a: "1",
-    b: 2,
-};
+import levelup  from 'levelup';
+import leveldown from 'leveldown';
 
-const str = "abc";
-
-const helloWorld = () => {
-    console.log("Hello World!");
-    return "Hi";
+export function levelupWrite() {
+  const db = levelup(leveldown('./mydb'));
+  return db.put('foo', {xxx: 'barbar'})
+    .then(() => {
+      console.log('Inside put THEN');
+      return db.get('foo');
+    }).then((v) => {
+      console.log('Got v:', v[2].toString());
+    });
 }
-
-export { obj, str, helloWorld };

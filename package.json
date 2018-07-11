@@ -29,6 +29,8 @@
   },
   "homepage": "https://github.com/aharshac/node-es6-boilerplate#readme",
   "dependencies": {
+    "leveldown": "^3.0.0",
+    "levelup": "^2.0.2"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

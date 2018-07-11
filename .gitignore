@@ -3,5 +3,6 @@ example/assets
 lib/
 dist/
 build/
+mydb/
 commands.txt
 npm-debug.log

@@ -1,3 +1,3 @@
-import { obj, str, helloWorld } from './example';
+import { levelupWrite } from './example';
 
-export { obj, helloWorld };
+export { levelupWrite };
