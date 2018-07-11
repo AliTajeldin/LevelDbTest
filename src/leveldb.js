@@ -2,7 +2,7 @@ import levelup  from 'levelup';
 import leveldown from 'leveldown';
 
 export function levelupWrite() {
-  const db = levelup(leveldown('./mydb'));
+  const db = levelup(leveldown('./leveldb'));
   return db.put('foo', {xxx: 'barbar'})
     .then(() => {
       console.log('Inside put THEN');
